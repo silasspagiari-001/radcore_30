@@ -1,0 +1,331 @@
+object frmPREVISAOCOMISSAO: TfrmPREVISAOCOMISSAO
+  Left = 0
+  Top = 0
+  ClientHeight = 336
+  ClientWidth = 603
+  Caption = 'Previs'#227'o de Comiss'#227'o'
+  OnShow = UniFormShow
+  OldCreateOrder = False
+  BorderIcons = []
+  MonitoredKeys.Keys = <>
+  OnReady = UniFormReady
+  OnDestroy = UniFormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object UniPageControl: TUniPageControl
+    Left = 0
+    Top = 0
+    Width = 603
+    Height = 277
+    Hint = ''
+    ActivePage = UniTabSheetvendas
+    Align = alClient
+    TabOrder = 0
+    object UniTabSheetvendas: TUniTabSheet
+      Hint = ''
+      Caption = 'Previs'#227'o de Comiss'#227'o'
+      object UniContainerPanel2: TUniContainerPanel
+        Left = 0
+        Top = 0
+        Width = 595
+        Height = 249
+        Hint = ''
+        ParentColor = False
+        Align = alClient
+        TabOrder = 0
+        object rcBlock40: TUniContainerPanel
+          Left = 3
+          Top = 3
+          Width = 150
+          Height = 48
+          Hint = '[[cols:xs-12 sm-12 md-6]]'
+          ParentColor = False
+          TabOrder = 1
+          DesignSize = (
+            150
+            48)
+          object UniLabelDtIni: TUniLabel
+            AlignWithMargins = True
+            Left = 1
+            Top = 0
+            Width = 100
+            Height = 15
+            Hint = ''
+            Margins.Top = 1
+            Margins.Bottom = 2
+            Caption = 'Pagamento Inicial'
+            ParentFont = False
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            TabOrder = 1
+          end
+          object edSearchDATAINIVEN: TUniDateTimePicker
+            AlignWithMargins = True
+            Left = 1
+            Top = 18
+            Width = 149
+            Height = 29
+            Hint = ''
+            Margins.Right = 5
+            DateTime = 43232.000000000000000000
+            DateFormat = 'dd/MM/yyyy'
+            TimeFormat = 'HH:mm:ss'
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 2
+            ParentFont = False
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            ClientEvents.ExtEvents.Strings = (
+              
+                'afterrender=function afterrender(sender, eOpts)'#13#10'{'#13#10' /* Mascara ' +
+                '"99/99/9999" para campo Data e cont'#233'udo vazio qdo n'#227'o tem data *' +
+                '/'#13#10' $("#"+sender.inputEl.id).inputmask("99/99/9999",{placeholder' +
+                ':"  /  /   "});'#13#10'}')
+          end
+        end
+        object rcBlock50: TUniContainerPanel
+          Left = 196
+          Top = 3
+          Width = 150
+          Height = 48
+          Hint = '[[cols:xs-12 sm-12 md-6]]'
+          ParentColor = False
+          TabOrder = 2
+          DesignSize = (
+            150
+            48)
+          object UniLabel1: TUniLabel
+            AlignWithMargins = True
+            Left = 2
+            Top = 0
+            Width = 17
+            Height = 15
+            Hint = ''
+            Margins.Top = 1
+            Margins.Bottom = 2
+            Caption = 'at'#233
+            ParentFont = False
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            TabOrder = 1
+          end
+          object edSearchDATAFINVEN: TUniDateTimePicker
+            AlignWithMargins = True
+            Left = 2
+            Top = 18
+            Width = 148
+            Height = 29
+            Hint = ''
+            Margins.Right = 5
+            DateTime = 43232.000000000000000000
+            DateFormat = 'dd/MM/yyyy'
+            TimeFormat = 'HH:mm:ss'
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 2
+            ParentFont = False
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            ClientEvents.ExtEvents.Strings = (
+              
+                'afterrender=function afterrender(sender, eOpts)'#13#10'{'#13#10' /* Mascara ' +
+                '"99/99/9999" para campo Data e cont'#233'udo vazio qdo n'#227'o tem data *' +
+                '/'#13#10' $("#"+sender.inputEl.id).inputmask("99/99/9999",{placeholder' +
+                ':"  /  /   "});'#13#10'}')
+          end
+        end
+        object rcBlock60: TUniContainerPanel
+          Left = 3
+          Top = 57
+          Width = 150
+          Height = 48
+          Hint = '[[cols:xs-12 sm-12 md-6]]'
+          ParentColor = False
+          TabOrder = 3
+          DesignSize = (
+            150
+            48)
+          object UniLabel2: TUniLabel
+            AlignWithMargins = True
+            Left = 1
+            Top = 1
+            Width = 106
+            Height = 15
+            Hint = ''
+            Margins.Top = 1
+            Margins.Bottom = 2
+            Caption = 'Funcionario Inicial'
+            ParentFont = False
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            TabOrder = 1
+          end
+          object edSearchPESSOAINIVEN: TUniButtonEdit
+            AlignWithMargins = True
+            Left = 1
+            Top = 21
+            Width = 149
+            Height = 26
+            Hint = ''
+            Text = '00001'
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 2
+            IconCls = 'search'
+          end
+        end
+        object rcBlock70: TUniContainerPanel
+          Left = 196
+          Top = 57
+          Width = 150
+          Height = 48
+          Hint = '[[cols:xs-12 sm-12 md-6]]'
+          ParentColor = False
+          TabOrder = 4
+          DesignSize = (
+            150
+            48)
+          object UniLabel3: TUniLabel
+            AlignWithMargins = True
+            Left = 2
+            Top = 1
+            Width = 17
+            Height = 15
+            Hint = ''
+            Margins.Top = 1
+            Margins.Bottom = 2
+            Caption = 'at'#233
+            ParentFont = False
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            TabOrder = 1
+          end
+          object edSearchPESSOAFINVEN: TUniButtonEdit
+            AlignWithMargins = True
+            Left = 2
+            Top = 21
+            Width = 148
+            Height = 26
+            Hint = ''
+            Text = '9999999'
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 2
+            IconCls = 'search'
+          end
+        end
+        object rcBlock80: TUniContainerPanel
+          Left = 3
+          Top = 111
+          Width = 150
+          Height = 48
+          Hint = '[['#13#10'cols:xs-12 sm-12 md-12'#13#10']]'
+          ParentColor = False
+          TabOrder = 5
+          DesignSize = (
+            150
+            48)
+          object UniLabelFd1: TUniLabel
+            AlignWithMargins = True
+            Left = 3
+            Top = 0
+            Width = 55
+            Height = 15
+            Hint = ''
+            Margins.Top = 1
+            Margins.Bottom = 2
+            Caption = 'Busca Por'
+            ParentFont = False
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            TabOrder = 1
+          end
+          object cbxtipo: TUniComboBox
+            AlignWithMargins = True
+            Left = 0
+            Top = 18
+            Width = 150
+            Height = 29
+            Hint = ''
+            Margins.Right = 5
+            Style = csDropDownList
+            Text = 'Emiss'#227'o'
+            Items.Strings = (
+              'Emiss'#227'o'
+              'vencimento')
+            ItemIndex = 0
+            Anchors = [akLeft, akTop, akRight]
+            ParentFont = False
+            Font.Height = -13
+            Font.Name = 'Calibri'
+            TabOrder = 2
+            IconItems = <>
+          end
+        end
+      end
+    end
+  end
+  object rcBlock10: TUniContainerPanel
+    Left = 0
+    Top = 277
+    Width = 603
+    Height = 59
+    Hint = '[['#13#10'cols:xs-12 sm-12 md-12'#13#10']]'
+    ParentColor = False
+    Align = alBottom
+    TabOrder = 1
+    object rcBlock20: TUniContainerPanel
+      Left = 3
+      Top = 5
+      Width = 150
+      Height = 48
+      Hint = '[[cols:xs-12 sm-12 md-6]]'
+      ParentColor = False
+      TabOrder = 1
+      DesignSize = (
+        150
+        48)
+      object btnimpressao: TUniBitBtn
+        Left = 11
+        Top = 13
+        Width = 119
+        Height = 29
+        Hint = '[[cls:ButtonThemeCrud]]'
+        Margins.Top = 28
+        Margins.Bottom = 12
+        Caption = '<i class="fas fa-file-pdf"> Impress'#227'o</i>'
+        Anchors = [akLeft, akRight, akBottom]
+        ParentFont = False
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        TabOrder = 1
+        OnClick = btnimpressaoClick
+      end
+    end
+    object rcBlock30: TUniContainerPanel
+      Left = 196
+      Top = 5
+      Width = 150
+      Height = 48
+      Hint = '[[cols:xs-12 sm-12 md-6]]'
+      ParentColor = False
+      TabOrder = 2
+      DesignSize = (
+        150
+        48)
+      object UniBitBtn1: TUniBitBtn
+        Left = 17
+        Top = 13
+        Width = 119
+        Height = 29
+        Hint = '[[cls:ButtonThemeCrud]]'
+        Margins.Top = 28
+        Margins.Bottom = 12
+        Caption = 'Sair'
+        Anchors = [akLeft, akRight, akBottom]
+        ParentFont = False
+        Font.Height = -13
+        Font.Name = 'Calibri'
+        TabOrder = 1
+        OnClick = UniBitBtn1Click
+      end
+    end
+  end
+end
